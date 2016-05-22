@@ -1,7 +1,7 @@
 FROM buildpack-deps:trusty-curl
 
 RUN apt-get update \
-	&& apt-get upgrade \
+	&& apt-get upgrade -y \
 	&& apt-get install -y apt-transport-https
 
 RUN sh -c 'echo "deb [arch=amd64] https://apt-mo.trafficmanager.net/repos/dotnet/ trusty main" > /etc/apt/sources.list.d/dotnetdev.list'
