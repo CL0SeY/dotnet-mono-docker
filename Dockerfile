@@ -1,4 +1,4 @@
-FROM buildpack-deps:trusty-curl
+FROM buildpack-deps:trusty-scm
 
 RUN apt-get update \
 	&& apt-get upgrade -y \
