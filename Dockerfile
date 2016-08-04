@@ -11,3 +11,5 @@ RUN apt-key adv --keyserver apt-mo.trafficmanager.net --recv-keys 417A0893 \
 	&& apt-get update \
 	&& apt-get install -y mono-devel ca-certificates-mono fsharp mono-vbnc nuget dotnet-dev-1.0.0-preview2-003121 \
 	&& rm -rf /var/lib/apt/lists/*
+
+RUN ln -s /usr/share/dotnet/shared/Microsoft.NETCore.App/1.0.0/libuv.so /usr/lib/libuv.so
