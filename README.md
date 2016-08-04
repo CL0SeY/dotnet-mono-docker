@@ -1,5 +1,5 @@
 # dotnet-mono-docker
-Base docker image including the dotnet cli (RC2) and mono
+Base docker image including the dotnet cli (RTM) and mono
 
 ## Why?
 The microsoft/dotnet image does not have any Mono support.
@@ -19,7 +19,7 @@ Reasoning for this:
 
 ## What's included
 
-- dotnet cli (1.0.0-preview1-002702) and therefore the dotnet runtime (RC2)
+- dotnet cli (1.0.0-preview2-003121) and therefore the dotnet runtime (RTM)
 - Mono (version 4.2.3.4)
 
 ## What's not
