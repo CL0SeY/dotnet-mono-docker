@@ -20,7 +20,7 @@ Reasoning for this:
 ## What's included
 
 - dotnet cli (1.0.0-preview2-003121) and therefore the dotnet runtime (RTM)
-- Mono (version 4.2.3.4)
+- Mono (version 4.4.2.11)
 
 ## What's not
 
