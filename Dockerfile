@@ -1,4 +1,4 @@
-FROM buildpack-deps:xenial-scm
+FROM buildpack-deps:xenial-curl
 
 # Reduce package restore sizes + times
 ENV NUGET_XMLDOC_MODE skip
