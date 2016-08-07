@@ -24,5 +24,5 @@ Reasoning for this:
 
 ## What's not
 
-- NodeJS and therefore gulp or bower. If you need these, use [cl0sey/dotnet-mono-node-docker](https://github.com/CL0SeY/dotnet-mono-node-docker).
-- An example app! See [cl0sey/dotnet-mono-rc2-aspnet-example](https://github.com/CL0SeY/dotnet-mono-rc2-aspnet-example) instead. (needs updating for xenial / RTM / mono 4.4)
+- NodeJS and therefore bower. If you need these, use [cl0sey/dotnet-mono-node-docker](https://github.com/CL0SeY/dotnet-mono-node-docker).
+- An example app! See [CL0SeY/dotnet-mono-aspnet-core-example](https://github.com/CL0SeY/dotnet-mono-aspnet-core-example) instead.
