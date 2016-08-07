@@ -1,5 +1,8 @@
 FROM buildpack-deps:xenial-scm
 
+# Reduce package restore sizes + times
+ENV NUGET_XMLDOC_MODE skip
+
 RUN apt-get update \
 	&& apt-get install -y apt-transport-https \
 	&& rm -rf /var/lib/apt/lists/*
