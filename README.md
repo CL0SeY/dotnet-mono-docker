@@ -10,19 +10,14 @@ This docker image intends to fill this gap.
 
 ## Base operating system
 
-The base operating system is Ubuntu 14.04.
-
-Reasoning for this:
-- Attempts were made to inherit from [microsoft/dotnet](https://hub.docker.com/r/microsoft/aspnet), and install mono (i.e. on Debian Wheezy). The mono apt-get install was not supported on Wheezy.
-- Installing dotnet on Debian Jessie (i.e. inheriting from [library/mono](https://hub.docker.com/r/library/mono)) caused a lot of issues with out-of-date packages.
-- The dotnet install process for Ubuntu 14.04 is [very straightforward](https://www.microsoft.com/net/core#ubuntu).
+The base operating system is Debian 8 (Jessie) due to importing from [microsoft/dotnet](https://hub.docker.com/r/microsoft/dotnet)
 
 ## What's included
 
-- dotnet cli (1.0.0-preview2-003121) and therefore the dotnet runtime (RTM)
-- Mono (version 4.2.3.4)
+- dotnet sdk/cli preview2 and therefore the dotnet runtime (RTM)
+- Mono (version 4.4.2.11)
 
 ## What's not
 
-- NodeJS and therefore gulp or bower. If you need these, use [cl0sey/dotnet-mono-node-docker](https://github.com/CL0SeY/dotnet-mono-node-docker).
-- An example app! See [cl0sey/dotnet-mono-rc2-aspnet-example](https://github.com/CL0SeY/dotnet-mono-rc2-aspnet-example) instead.
+- NodeJS and therefore bower. If you need these, use [cl0sey/dotnet-mono-node-docker](https://github.com/CL0SeY/dotnet-mono-node-docker).
+- An example app! See [cl0sey/dotnet-mono-aspnet-core-example](https://github.com/CL0SeY/dotnet-mono-aspnet-core-example) instead.
