@@ -14,14 +14,18 @@ The base operating system is Debian 8 (Jessie) due to importing from [microsoft/
 
 ## What's included
 
-### sdk tag
+### sdk tag (aka latest)
 
-- dotnet sdk/cli preview2 and therefore the dotnet runtime (RTM)
-- Mono (version 4.4.2.11)
+Good for building!
+
+- dotnet sdk latest (specific version will come from base image's "sdk" / "latest" tag)
+- Mono (version 4.4.2.11), including ca-certificates-mono, fsharp, mono-vbnc, nuget, referenceassemblies-pcl
 
 ### runtime tag
 
-- dotnet runtime 1.0.1
+Good for running! (see [http://blog.tomecek.net/post/build-docker-image-in-two-steps/](http://blog.tomecek.net/post/build-docker-image-in-two-steps/) for information on making a two-step docker build process.)
+
+- dotnet runtime latest (specific version will come from base image's "sdk" / "latest" tag)
 - Mono (version 4.4.2.11)
 
 ## What's not
