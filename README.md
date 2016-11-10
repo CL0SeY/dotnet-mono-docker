@@ -14,7 +14,14 @@ The base operating system is Debian 8 (Jessie) due to importing from [microsoft/
 
 ## What's included
 
+### sdk tag
+
 - dotnet sdk/cli preview2 and therefore the dotnet runtime (RTM)
+- Mono (version 4.4.2.11)
+
+### runtime tag
+
+- dotnet runtime 1.0.1
 - Mono (version 4.4.2.11)
 
 ## What's not
